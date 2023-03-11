@@ -1,0 +1,8 @@
+input AMPLIFY {
+  globalAuthRule: AuthRule = {allow: public}
+}
+
+type Note @model @auth(rules: [{allow: owner}]) {
+  id: ID!
+  text: String!
+} 
