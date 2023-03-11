@@ -17,6 +17,15 @@
       },
       "api": {
         "amplifytemp": {}
+      },
+      "function": {
+        "S3Trigger93c80eb9": {
+          "deploymentBucketName": "amplify-amplifytemp-dev-200342-deployment",
+          "s3Key": "amplify-builds/S3Trigger93c80eb9-3442535a61586463746b-build.zip"
+        }
+      },
+      "storage": {
+        "imageOnly": {}
       }
     }
   }

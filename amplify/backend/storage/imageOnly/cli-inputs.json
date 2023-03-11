@@ -1,0 +1,14 @@
+{
+  "resourceName": "imageOnly",
+  "policyUUID": "e59d5797",
+  "bucketName": "amplifytempa8067ff837e94c2eacc61abde7886eab",
+  "storageAccess": "auth",
+  "guestAccess": [],
+  "authAccess": [
+    "CREATE_AND_UPDATE",
+    "READ",
+    "DELETE"
+  ],
+  "triggerFunction": "S3Trigger93c80eb9",
+  "groupAccess": {}
+}
