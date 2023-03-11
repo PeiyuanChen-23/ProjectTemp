@@ -6,7 +6,7 @@ function Form(props) {
     <form>
       <h2 className="label-wrapper">
         <label htmlFor="new-todo-input" className="label__lg">
-          What needs to be done?
+          Who you want to find?
         </label>
       </h2>
       <input
@@ -17,7 +17,7 @@ function Form(props) {
         autoComplete="off"
       />
       <button type="submit" className="btn btn__primary btn__lg">
-        Add
+        Search
       </button>
     </form>
   );

@@ -3,6 +3,9 @@ import './App.css';
 import Form from "./components/Form";
 import FilterButton from "./components/FilterButton";
 import Todo from "./components/Todo.js";
+import { Amplify } from 'aws-amplify';
+import { withAuthenticator, AmplifySignOut } from '@aws-amplify/ui-react'
+
 
 function App(props) {
   const taskList = props.tasks.map((task) => (
@@ -25,13 +28,13 @@ function App(props) {
   );
   return (
     <div className="todoapp stack-large">
-      <h1>TodoMatic</h1>
+      <h1>Instructor List</h1>
       <Form />
       <div className="filters btn-group stack-exception">
         {filterList}
       </div>
       <h2 id="list-heading">
-        3 tasks remaining
+        Users
       </h2>
       <ul
         role="list"
@@ -44,4 +47,4 @@ function App(props) {
   );
 }
 
-export default App;
+export default withAuthenticator(App);

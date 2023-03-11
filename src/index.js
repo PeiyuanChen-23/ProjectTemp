@@ -9,9 +9,9 @@ import config from './aws-exports';
 
 Amplify.configure(config);
 const tasksDATA = [
-  { id: "todo-0", name: "Eat", completed: true },
-  { id: "todo-1", name: "Sleep", completed: false },
-  { id: "todo-2", name: "Repeat", completed: false }
+  { id: "user-0", name: "Instructor1", completed: true },
+  { id: "user-1", name: "Instructor2", completed: false },
+  { id: "user-2", name: "Instructor3", completed: false }
 ];
 
 const filtersDATA = [
