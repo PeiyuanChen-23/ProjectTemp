@@ -4,10 +4,23 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 
+
+const tasksDATA = [
+  { id: "todo-0", name: "Eat", completed: true },
+  { id: "todo-1", name: "Sleep", completed: false },
+  { id: "todo-2", name: "Repeat", completed: false }
+];
+
+const filtersDATA = [
+  { id: "filter-0", name: "All", completed: true },
+  { id: "filter-1", name: "Instructor", completed: false },
+  { id: "filter-2", name: "Student", completed: false }
+];
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <App tasks={tasksDATA} filters={filtersDATA}/>
   </React.StrictMode>
 );
 
